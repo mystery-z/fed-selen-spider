@@ -1,0 +1,9 @@
+1640612593656	geckodriver	INFO	Listening on 127.0.0.1:40157
+1640612593677	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54613" "-no-remote" "-profile" "/tmp/rust_mozprofileMA586x"
+1640612613395	Marionette	INFO	Listening on port 45907
+1640612613445	Marionette	WARN	TLS certificate errors will be ignored for this session
+1640612644157	Marionette	INFO	Stopped listening on port 45907
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
