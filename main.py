@@ -3,7 +3,7 @@
 """
 Created on Mon Dec 27 22:35:47 2021
 
-@author: ACE-OF-DIAMONDS
+@author: ace-of-diamonds
 # """
 # from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
@@ -43,10 +43,19 @@ df=pd.DataFrame(result)
 print(df.head())
 
 
-df.to_csv('file_name.csv')
+yesterday = today - timedelta(days = 1)
+
+today_date = today.strftime("%m-%d-%Y")
+yesterday_date = yesterday.strftime("%m-%d-%Y")
+
+today_date = str(today_date)
+yesterday_date = str(yesterday_date)
+
+
+df.to_csv(today_date+'.csv')
 
 df1 = df[['title', 'media', 'datetime', 'desc', 'link']]
 
-df1.to_csv('parsed.csv')
+df1.to_csv(today_date+'parsed.csv')
 
-df1.to_html('parsed.html')
+df1.to_html(today_date+'parsed.html')
