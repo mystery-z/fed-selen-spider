@@ -8,8 +8,6 @@ Created on Mon Dec 27 22:35:47 2021
 # from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
 
-# driver = webdriver.Firefox(executable_path="/home/juwoncha/문서/fed_selen/geckodriver")
-# driver.get('https://www.linuxhint.com')
 # print('Title: %s' % driver.title)
 # driver.quit()
 
@@ -26,8 +24,8 @@ today = date.today()
 
 yesterday = today - timedelta(days = 1)
 
-today_date = today.strftime("%m/%d/%Y")
-yesterday_date = yesterday.strftime("%m/%d/%Y")
+today_date = str(today.strftime("%m/%d/%Y"))
+yesterday_date = str(yesterday.strftime("%m/%d/%Y"))
 
 today_date = str(today_date)
 yesterday_date = str(yesterday_date)
@@ -43,13 +41,8 @@ df=pd.DataFrame(result)
 print(df.head())
 
 
-yesterday = today - timedelta(days = 1)
-
-today_date = today.strftime("%m-%d-%Y")
-yesterday_date = yesterday.strftime("%m-%d-%Y")
-
-today_date = str(today_date)
-yesterday_date = str(yesterday_date)
+today_date = str(today.strftime("%m-%d-%Y"))
+yesterday_date = str(yesterday.strftime("%m-%d-%Y"))
 
 
 df.to_csv(today_date+'.csv')
