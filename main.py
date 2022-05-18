@@ -27,9 +27,6 @@ yesterday = today - timedelta(days = 1)
 today_date = str(today.strftime("%m/%d/%Y"))
 yesterday_date = str(yesterday.strftime("%m/%d/%Y"))
 
-today_date = str(today_date)
-yesterday_date = str(yesterday_date)
-
 print(yesterday_date)
 
 print(today_date)
