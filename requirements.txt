@@ -1,0 +1,3 @@
+GoogleNews==1.6.4
+Schedule==1.1.0
+newspaper3k==0.2.8

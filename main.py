@@ -95,7 +95,7 @@ def send_mail():
 import schedule
 import time
 
-def job(t):
+def job():
 	collect_data()
 	time.sleep(60)
 	send_email()
